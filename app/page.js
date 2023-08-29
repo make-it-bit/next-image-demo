@@ -139,7 +139,14 @@ export default function Home() {
           </h3>
           <h4>
             <b>bitropia.com</b>
-            <p>*add lighthouse scores here?*</p>
+            <p className="flex flex-col gap-4">
+              <Image
+                src="/bitropia_lighthouse_scores.png"
+                width={1000}
+                height={384}
+              />
+              <Image src="/bitropia_blog.png" width={1000} height={384} />
+            </p>
             <b>webtailor.ee</b>
             <p>*add lighthouse scores here?*</p>
           </h4>
