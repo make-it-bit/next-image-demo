@@ -249,6 +249,29 @@ export default function Home() {
                 />
               </div>
             </div>
+            <div className="mt-12">
+              <p>
+                Generating different source sets with <b>sizes</b> property.
+              </p>
+              <div>
+                <p className="bg-gray-400 p-2 mt-6">
+                  sizes property is not set
+                </p>
+                <Image src="/sample.jpg" width={600} height={400} />
+              </div>
+              <div>
+                <p className="bg-gray-400 p-2 mt-6">
+                  sizes="(min-width: 700px) 600px, calc(95.79vw - 51px) width=
+                  {600} height={400}"
+                </p>
+                <Image
+                  src="/sample.jpg"
+                  width={600}
+                  height={400}
+                  sizes="(min-width: 700px) 600px, calc(95.79vw - 51px)"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
